@@ -65,6 +65,41 @@
   border: 1px solid var(--primary-item-bg-color);
 }
 
+.portfolio__link_thumb {
+  position: relative;
+  display: flex;
+}
+
+.portfolio__link_overlay-content {
+  position: absolute;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+
+  opacity: 0;
+}
+
+.portfolio__link:hover
+  > .portfolio__link_thumb
+  > .portfolio__link_overlay-content,
+.portfolio__link:hover > .portfolio__link_thumb::before {
+  opacity: 1;
+  transition: 250ms opacity linear;
+}
+
+.portfolio__link_thumb::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+
 .portfolio__item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
