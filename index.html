@@ -65,7 +65,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__button" type="button">Замовити послугу</button>
+          <button data-modal-open class="hero__button" type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="benefits">
@@ -398,6 +400,16 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop">
+      <div class="modal">
+        <button data-modal-close class="modal__button_close">
+          <svg class="modal__cross" width="11" height="11">
+            <use href="./images/sprite.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <!-- <script src="./js/paddingforbody.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
