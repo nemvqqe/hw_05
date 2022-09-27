@@ -65,6 +65,10 @@
   border: 1px solid var(--primary-item-bg-color);
 }
 
+.portfolio__link {
+  text-decoration: none;
+}
+
 .portfolio__link_thumb {
   position: relative;
   display: flex;
@@ -106,10 +110,6 @@
 
 .portfolio__item:nth-child(3n) {
   margin-right: 0px;
-}
-
-.portfolio__link {
-  text-decoration: none;
 }
 
 .portfolio__title {
