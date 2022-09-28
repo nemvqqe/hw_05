@@ -56,6 +56,11 @@
   cursor: pointer;
   padding: 10px 32px;
   margin: 30px auto 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover,
@@ -237,6 +242,9 @@
   border-radius: 50%;
   color: var(--soc-icons-color);
   background-color: var(--primary-white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__social-icon {
@@ -274,6 +282,9 @@
   border: 1px solid var(--soc-icons-color);
   border-radius: 4px;
   color: var(--soc-icons-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client__item:not(:last-child) {
